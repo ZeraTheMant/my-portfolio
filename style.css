@@ -7,31 +7,74 @@ html {
 *::after {
 	box-sizing: inherit;
 	margin: 0;
+	padding: 0;
 }
 
 body {
-	font-family: serif;
+	font-family: Helvetica;
 }
 
 header {
     width: 100%;
-    background: white;
 }
 
 #top-strip {
-    background: grey;
+    background: black;
     height: 10px;
     width: 100%;
 }
 
 #my-picture {
-    height: 150px;
-    width: 150px;
+    height: 175px;
+    width: 175px;
     border-radius: 50%;
-    border: 1px solid grey;
+    border: 1px solid black;
     display: block;
+	margin: 30px auto 30px auto;
 }
 
 header .halved-display > div {
-    margin: auto;
+    text-align: center;
+}
+
+.subtitle {
+	color: grey;
+}
+
+header  .subtitle{
+	margin-top: 10px;
+	font-size: 1.5rem;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+header li {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	background: grey;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header li i {
+	font-size: 50px;
+}
+
+header li a {
+	color: white;
+	text-decoration: none;
+}
+
+header li:hover {
+	background: black;
+	transition: 0.5s ease-in;
 }
