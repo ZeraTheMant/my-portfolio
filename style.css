@@ -12,10 +12,15 @@ html {
 
 body {
 	font-family: Helvetica;
+	background: #f5f5f5;
 }
 
 header {
     width: 100%;
+}
+
+.component {
+	background: white;
 }
 
 #top-strip {
@@ -33,7 +38,7 @@ header {
 	margin: 30px auto 30px auto;
 }
 
-header .halved-display > div {
+header .halved-display-bigger-left > #photo-and-thumblinks-container {
     text-align: center;
 }
 
@@ -48,13 +53,16 @@ header  .subtitle{
 
 ul {
 	list-style: none;
+}
+
+#photo-and-thumblinks-container ul {
 	display: flex;
 	gap: 15px;
 	justify-content: center;
-	margin-top: 20px;
+	margin-top: 20px;	
 }
 
-header li {
+header #photo-and-thumblinks-container  li {
 	height: 35px;
 	width: 35px;
 	border-radius: 50%;
@@ -65,16 +73,69 @@ header li {
 	align-items: center;
 }
 
-header li i {
-	font-size: 50px;
-}
-
 header li a {
 	color: white;
 	text-decoration: none;
 }
 
-header li:hover {
+header #photo-and-thumblinks-container  li:hover {
 	background: black;
 	transition: 0.5s ease-in;
+}
+
+.halved-display-bigger-left {
+	grid-template-columns: 2fr 1fr;		
+}
+
+.halved-display-bigger-right {
+	grid-template-columns: 1fr 2fr;
+}
+
+#my-info-box li:not(:first-child) {
+	display: grid;
+	grid-template-columns: 1fr 8fr;
+	margin-top: 30px;
+}
+
+#my-info-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+#my-info-box i {
+	color: grey;
+}
+
+
+
+
+
+
+
+/* media queries */
+
+@media only screen and (min-width: 750px) {
+	.halved-display-bigger-left,
+	.halved-display-bigger-right,
+	.halved-display-equal {
+		display: grid;		
+	}
+	
+	header .halved-display-bigger-left > #photo-and-thumblinks-container {
+		text-align: initial;
+	}
+	
+	#photo-and-thumblinks-container ul {
+		justify-content: flex-start;
+	}
+	
+	header .halved-display-bigger-right {
+		align-items: center;
+	}
+	
+	#my-info-box {
+		margin-top: 0;
+	}
 }
