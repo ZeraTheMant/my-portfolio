@@ -89,8 +89,13 @@ header #photo-and-thumblinks-container  li:hover {
 	grid-template-columns: 2fr 1fr;		
 }
 
-.halved-display-bigger-right {
+.halved-display-bigger-right,
+.halved-display-projects {
 	grid-template-columns: 1fr 2fr;
+}
+
+.halved-display-projects {
+    display: grid;
 }
 
 #my-info-box li:not(:first-child) {
