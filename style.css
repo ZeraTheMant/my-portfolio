@@ -12,3 +12,26 @@ html {
 body {
 	font-family: serif;
 }
+
+header {
+    width: 100%;
+    background: white;
+}
+
+#top-strip {
+    background: grey;
+    height: 10px;
+    width: 100%;
+}
+
+#my-picture {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    display: block;
+}
+
+header .halved-display > div {
+    margin: auto;
+}
