@@ -17,6 +17,7 @@ body {
 
 header {
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .component {
@@ -93,9 +94,13 @@ header #photo-and-thumblinks-container  li:hover {
 }
 
 #my-info-box li:not(:first-child) {
-	display: grid;
-	grid-template-columns: 1fr 8fr;
 	margin-top: 30px;
+}
+
+#my-info-box li,
+#education li {
+    display: grid;
+	grid-template-columns: 1fr 8fr;
 }
 
 #my-info-box {
@@ -105,7 +110,8 @@ header #photo-and-thumblinks-container  li:hover {
 	margin-top: 30px;
 }
 
-#my-info-box i {
+#my-info-box i,
+#education i {
 	color: grey;
 }
 
@@ -113,8 +119,82 @@ main {
 	padding: 50px 30px;
 }
 
+main p {
+    margin-top: 20px;
+}
 
+main .component {
+    padding: 20px;
+}
 
+.bar {
+    width: 100%;
+    height: 15px;
+    background: lightgrey;
+    position:relative;
+    z-index: 1;
+}
+
+.bar::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 15px;
+    background: #66cb8c;
+    z-index: 2;  
+}
+
+#python-bar::after,
+#javascript-bar::after ,
+#html-css-bar::after {
+    width: 90%;
+}
+
+#php-bar::after {
+    width: 60%;
+}
+
+#vb-bar::after {
+    width: 30%;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-container span {
+    color: lightgrey;
+    font-size: 0.9rem;
+}
+
+#skills ul li:not(:first-child),
+#education ul li:not(:first-child) {
+    margin-top: 20px;
+}
+
+#skills ul,
+#education ul {
+    margin-top: 20px;
+}
+
+main > div:nth-child(2) {
+    margin-top: 25px;
+}
+
+main > div > section:not(:first-child) {
+    margin-top: 25px;   
+}
+
+#education li span {
+    display: block;
+    font-size: 0.8rem;
+}
+
+#education li div h4{
+    color: grey;
+}
 
 
 /* media queries */
@@ -125,6 +205,10 @@ main {
 	.halved-display-equal {
 		display: grid;		
 	}
+    
+    header {
+        padding-bottom: 0px;
+    }
 	
 	header .halved-display-bigger-left > #photo-and-thumblinks-container {
 		text-align: initial;
@@ -145,4 +229,8 @@ main {
 	main.halved-display-bigger-left {
 		grid-gap: 25px;
 	}
+    
+    main > div:nth-child(2) {
+        margin-top: 0;
+    }
 }
