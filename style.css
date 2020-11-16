@@ -12,7 +12,7 @@ html {
 
 body {
 	font-family: Helvetica;
-	background: #f5f5f5;
+	background: #dcdcdc;
 }
 
 header {
@@ -21,6 +21,7 @@ header {
 
 .component {
 	background: white;
+	border-radius: 3px;
 }
 
 #top-strip {
@@ -108,7 +109,9 @@ header #photo-and-thumblinks-container  li:hover {
 	color: grey;
 }
 
-
+main {
+	padding: 50px 30px;
+}
 
 
 
@@ -137,5 +140,9 @@ header #photo-and-thumblinks-container  li:hover {
 	
 	#my-info-box {
 		margin-top: 0;
+	}
+	
+	main.halved-display-bigger-left {
+		grid-gap: 25px;
 	}
 }
