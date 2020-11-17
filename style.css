@@ -75,9 +75,20 @@ header #photo-and-thumblinks-container  li {
 	align-items: center;
 }
 
+a {
+	text-decoration: none;
+}
+
+#projects p a {
+	color: #66cb8c;
+}
+
+#projects h3 a {
+	color: grey;
+}
+
 header li a {
 	color: white;
-	text-decoration: none;
 }
 
 header #photo-and-thumblinks-container  li:hover {
