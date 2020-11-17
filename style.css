@@ -87,6 +87,13 @@ a {
 	color: grey;
 }
 
+#projects img {
+	width: 100%;
+	margin: auto;
+	display: block;
+	height: 120px;
+}
+
 header li a {
 	color: white;
 }
@@ -107,6 +114,15 @@ header #photo-and-thumblinks-container  li:hover {
 
 .halved-display-projects {
     display: grid;
+	grid-gap: 15px;
+}
+
+.halved-display-projects:not(:first-child) {
+	margin-top: 20px;
+}
+
+#projects-container {
+	margin-top: 25px;
 }
 
 #my-info-box li:not(:first-child) {
@@ -141,6 +157,10 @@ main p {
 
 main .component {
     padding: 20px;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 .bar {
