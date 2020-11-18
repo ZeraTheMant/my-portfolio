@@ -159,7 +159,13 @@ main .component {
     padding: 20px;
 }
 
-a:hover {
+#about-me a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover,
+#about-me a:hover {
 	text-decoration: underline;
 }
 
