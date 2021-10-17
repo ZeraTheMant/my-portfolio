@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
 	<title>My Portfolio</title>
 </head>
 
@@ -84,6 +85,28 @@
                 <h2>Projects</h2>
                 
 				<div id="projects-container">
+					<div class="halved-display-projects">
+						<div>
+							<a href="#" onClick="show_slideshow()">
+								<img src="images/slider/20.jpg"/>
+							</a>
+						</div>
+						
+						<div>
+							<h3><a href="#" onClick="show_slideshow()">Multimedia Portfolio</a></h3>
+							
+							<p>
+								A collection of digital ads and video ads that I created while employed at Chunnel & Channel Realty Marketing & Development Corporation highlighting the skills that I've learned and the improvement in my multimedia skills.
+							</p>
+							
+							<p>
+								<a href="#" onClick="show_slideshow()">
+									Click here to view
+								</a>
+							</p>
+						</div>
+					</div>					
+					
 					<div class="halved-display-projects">
 						<div>
 							<a href="https://zerathemant.github.io/odin_positioning_nyt_page" target="_blank">
@@ -520,10 +543,32 @@
 		</div>
 	</main>
 	
+	<div id="opaque-bg" class="hidden"></div>
+	
+	<div id="slideshow-outer-wrapper" class="hidden">
+		<div>	
+			<div id="close-button">&#10060;</div>		
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+
+			  <!-- Next and previous buttons -->
+				<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+				<a class="next" onclick="changeSlide(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<!-- The dots/circles -->
+			<div class="relative">
+				<div id="dot-container" style="text-align:center"></div>
+			</div>
+		</div>
+	</div>
+	
 	<footer>
 		<p>Portfolio of Reuben Daniel E. Domondon. Made using HTML and CSS</p>
 	</footer>
 
-	<script src="script.js"><script/>
+	<script src="generate_slides.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
