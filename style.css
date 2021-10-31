@@ -384,6 +384,10 @@ footer p {
 	right: 10px;
 }
 
+#arrows-container {
+
+}
+
 #dot-container {
 	position: absolute;
 	width: 100%;
@@ -397,6 +401,7 @@ footer p {
 .slideshow-container img {
 	object-fit: contain;
 	height: 80vh;
+	width: 100%;
 	display: block;
 	margin: auto;
 }

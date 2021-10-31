@@ -1,5 +1,9 @@
 const dots = document.getElementsByClassName("dot");	
 const slides = document.getElementsByClassName("mySlides");
+const img = document.querySelectorAll(".mySlides img");
+const prev = document.querySelector('.prev')
+const opaque_bg = document.querySelector("#opaque-bg")
+const arrows_container = document.querySelector('#arrows-container')
 
 var slideIndex = 0;
 showSlides(slideIndex);
@@ -9,7 +13,6 @@ function resetDots() {
   for (let i=0; i<5; i++) {
 		dots[i].onclick = function() {
 			const x = slideIndex+i
-			alert(x)
 		}
   }	  
 }
@@ -27,9 +30,9 @@ function changeSlide(n) {
   slideIndex += n
   
   if (slideIndex < 0)
-		slideIndex = 24
+		slideIndex = 27
   
-  if (slideIndex > 24)
+  if (slideIndex > 27)
 		slideIndex = 0  
   
   showSlides(slideIndex);
@@ -43,7 +46,6 @@ function changeDotGroup(direction) {
 	let previousSlide = dots[slideIndex-direction]
 	if (!previousSlide)
 		previousSlide = dots[0]
-	console.log(currentSlide, previousSlide)	
 	
 	if (currentSlide.name != previousSlide.name) {
 		hideDotGroups(currentSlide.name)			
@@ -66,7 +68,12 @@ function showSlides(n) {
       slides[i].style.display = "none";
   } 
   
-  slides[n].style.display = "block";  
+  slides[n].style.display = "flex";  
+  slides[n].style.justifyContent = "center"; 
+  const x = img[n].getBoundingClientRect()
+  console.log(img[n].offsetWidth)  
+  //prev.style.left = x.left + 'px'
+   
 }
 
 function show_slideshow() {
@@ -86,7 +93,7 @@ function changeBgHeight() {
 }
 
 
-const opaque_bg = document.querySelector("#opaque-bg")
+
 const slideshowOuterWrapper = document.querySelector('#slideshow-outer-wrapper')
 
 const closeBtn = document.querySelector('#close-button')

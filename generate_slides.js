@@ -1,4 +1,4 @@
-const TOTAL = 25
+const TOTAL = 28
 const slideshowContainer = document.querySelector('.slideshow-container')
 
 function create_slide(n) {
