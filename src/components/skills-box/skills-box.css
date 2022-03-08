@@ -1,0 +1,41 @@
+#skills-box {
+	margin-top: 20px;
+}
+
+.skill h3 {
+	color: black;
+	margin: 0;
+}
+
+.skill-title {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.expertise-subtext { 
+	color: grey; 
+	font-size: 0.9rem;
+}
+
+.bar-bg {
+	width: 100%;
+	background: lightgrey;
+	height: 20px;
+	position: relative;
+	margin-top: -10px;
+}
+
+.bar-inner {
+	background: #66cb8c;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+@media only screen and (min-width: 750px) {
+	#skills-box {
+		margin-top: 0;
+	}
+}

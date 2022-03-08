@@ -1,0 +1,107 @@
+[
+	{
+		"title": "Responsive Google Homepage Design",
+		"link": "https://zerathemant.github.io/google-page-react-copy",
+		"github_repo": "https://github.com/ZeraTheMant/google-page-react-copy",
+		"description": "A responsive mockup of the Google homepage built with ReactJS and Material UI Build with a mobile-first approach in mind.",
+		"image": "./assets/images/google_homepage.png"
+	},
+	{
+		"title": "New York Times Article Recreation",
+		"link": "https://zerathemant.github.io/odin_positioning_nyt_page",
+		"github_repo": "https://github.com/ZeraTheMant/odin_positioning_nyt_page",
+		"description": "An exercise from the Odin Project. A Recreation of an article from the New York Times. Mobile-responsive. Built using plain Javascript, HTML, and CSS.",
+		"image": "./assets/images/nyt.jpg"
+	},
+	{
+		"title": "MV Santiago Wellness Center Appointment System",
+		"link": "http://mvsantiago-wellness-demo.000webhostapp.com/",
+		"github_repo": "https://github.com/ZeraTheMant/mvsantiago-wellness",
+		"description": "Project for my thesis subject. An appointment system for MV Santiago Wellness Center, located in Trece Martires, Cavite.",
+		"image": "./assets/images/mvsan.png"
+	},
+	{
+		"title": "Yu-Gi-Oh! Forbidden Memories Pygame Remake",
+		"link": "https://www.youtube.com/watch?v=2ymxdTZaEcE",
+		"github_repo": "https://github.com/ZeraTheMant/ygo-fm-pygame",
+		"description": "A remake of the classic PSX game Yu-Gi-Oh! Forbidden memories made using Python and Pygame. Unfinished and currently on hiatus, has functional enemy AI that can fuse cards, select appropriate guardian stars, and battle intelligently.",
+		"image": "./assets/images/yugioh.png"
+	},
+	{
+		"title": "Smashing Magazine Frontpage Recreation",
+		"link": "https://zerathemant.github.io/smashing_magazine_clone/",
+		"github_repo": "https://github.com/ZeraTheMant/smashing_magazine_clone",
+		"description": "Recreation of the frontpage of Smashing Magazine. Made using HTML, CSS, and vanilla JS.",
+		"image": "./assets/images/smashing.jpg"
+	},
+	{
+		"title": "Simple Ecommerce Site",
+		"link": "https://reubendomondoncommercejs.netlify.app/",
+		"github_repo": "https://github.com/ZeraTheMant/ecommerce-practice",
+		"description": "An mobile-responsive simple e-commerce site built using ReactJS and Commerce.js.",
+		"image": "./assets/images/ecommerce.jpg"
+	},
+	{
+		"title": "Memory Card Game",
+		"link": "https://zerathemant.github.io/memory-card/",
+		"github_repo": "https://github.com/ZeraTheMant/memory-card",
+		"description": "A memory exercise game from the Odin Project. Select 12 images from the screen, but do not click on an image more than once! Built using React.JS, HTML, and CSS.",
+		"image": "./assets/images/memory.png"
+	},
+	{
+		"title": "Restaurant",
+		"link": "https://zerathemant.github.io/react-js-restaurant/",
+		"github_repo": "https://github.com/ZeraTheMant/react-js-restaurant/",
+		"description": "My submission for the Shopping Cart section of the Odin Project React.JS course.",
+		"image": "./assets/images/restaurant.png"
+	},
+	{
+		"title": "Old Apple Homepage Recreation",
+		"link": "https://zerathemant.github.io/-odin_background_gradients/",
+		"github_repo": "https://github.com/ZeraTheMant/-odin_background_gradients",
+		"description": "Activity Recreating the old Apple website homepage A project in the Odin Project HTML/CSS course.",
+		"image": "./assets/images/apple.png"
+	},
+	{
+		"title": "Responsive YouTube Page",
+		"link": "https://zerathemant.github.io/youtube_page/",
+		"github_repo": "https://github.com/ZeraTheMant/youtube_page",
+		"description": "An HTML and CSS exercise from the Odin Project. A reproduction of a youtube page that is mobile-responsive.",
+		"image": "./assets/images/youthumb.png"
+	},
+	{
+		"title": "To-Do List",
+		"link": "https://zerathemant.github.io/odin-to-do-list",
+		"github_repo": "https://github.com/ZeraTheMant/odin-to-do-list",
+		"description": "A to-do list built using HTML, CSS, and Javascript. Uses localstorage API to store data in a session.",
+		"image": "./assets/images/todo_list.png"
+	},
+	{
+		"title": "Intuit Login Form Copy",
+		"link": "https://zerathemant.github.io/odin_html_form/",
+		"github_repo": "https://github.com/ZeraTheMant/odin_html_form/",
+		"description": "A copy of the login form of Intuit.",
+		"image": "./assets/images/intuit.jpg"
+	},
+	{
+		"title": "Etch-a-sketch",
+		"link": "https://zerathemant.github.io/etch-a-sketch/",
+		"github_repo": "https://github.com/ZeraTheMant/etch-a-sketch/",
+		"description": "A multicolored etch-a-sketch grid. Each successive pass to an already visited box makes it darker until it becomes black.",
+		"image": "./assets/images/etch a sketch.jpg"
+	},
+	{
+		"title": "Where's Waldo? Disney Edition",
+		"link": "https://waldo-a53af.web.app/",
+		"github_repo": "https://github.com/ZeraTheMant/disney-wheres-waldo",
+		"description": "A Disney twist on the classic game Where's Waldo. Find three Disney characters among the crowd!",
+		"image": "./assets/images/waldisney.png"
+	},
+	{
+		"title": "Weather App",
+		"link": "https://zerathemant.github.io/weather-app",
+		"github_repo": "https://github.com/ZeraTheMant/weather-app",
+		"description": "A weather information app developed using the OpenWeatherMap API. Just enter a city to the search box and get the latest weather report for that particular location.",
+		"image": "./assets/images/weather.png"
+	}
+]
